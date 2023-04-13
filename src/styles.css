@@ -90,7 +90,11 @@ main p {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+.card-header .img-responsive {
+  aspect-ratio: 1 / 1;
 }
 .grid {
   display: grid;
@@ -101,9 +105,10 @@ main p {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
-.grid-mountrushmore {
+.grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
+
 .grid-secondary {
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -111,10 +116,19 @@ section.secondary-body {
   background-color: #f8f8f8;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
 .card {
   background-color: white;
   margin: 30px 0;
 }
+
+.card-header.grid {
+  grid-gap: 0;
+}
+
 .card-body {
   padding: 30px;
 }
@@ -215,5 +229,12 @@ footer a {
   }
   section {
     padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16 / 9;
   }
 }
