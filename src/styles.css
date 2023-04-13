@@ -109,7 +109,7 @@ main p {
   grid-template-columns: 1fr 1fr;
 }
 
-.grid-secondary {
+.grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
 }
 section.secondary-body {
@@ -164,6 +164,10 @@ section.secondary-body {
   padding: 16px;
   background-color: #462cb3;
   text-decoration: none;
+}
+
+.instagram-embed {
+  margin: 30px 0;
 }
 
 .text-center {
