@@ -234,11 +234,19 @@ footer a {
     font-size: 10px;
   }
 
+  .responsive-title {
+    font-size: 28px;
+  }
+
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 30px;
-    margin: 10px 75px 10px 75px;
   }
+
+  .grid-footer {
+    margin: 8px 8px;
+  }
+
   section {
     padding: 30px;
   }
