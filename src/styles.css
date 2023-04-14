@@ -104,6 +104,9 @@ main p {
 .grid-footer {
   grid-template-columns: 1fr 2fr 2fr;
 }
+.grid-1-columns {
+  grid-template-columns: 1fr;
+}
 
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
@@ -147,6 +150,10 @@ section.secondary-body {
   line-height: 1.5;
   color: #272044;
   margin: 0;
+}
+
+.family {
+  padding-top: 45px;
 }
 .card-footer {
   padding: 20px;
@@ -230,21 +237,25 @@ footer a {
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 30px;
+    margin: 10px 75px 10px 75px;
   }
   section {
     padding: 30px;
   }
 
-  .card-header img {
-    display: none;
-  }
   .embed {
     aspect-ratio: 16 / 9;
   }
   .instagram-embed {
-    align-content: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .instagram-embed iframe {
+    margin: 0 auto;
   }
 }
+
 @media (900px <= width <= 1240px) {
   .instagram-embed .grid {
     grid-template-columns: 1fr 1fr;
